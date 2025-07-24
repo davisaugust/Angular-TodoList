@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "tarefa": "Aprender angular",
+      "categoria": "pessoal",
+      "concluido": false
+    },
+    {
+      "id": "2",
+      "tarefa": "Aprender Typescript",
+      "categoria": "pessoal",
+      "concluido": false
+    }
+  ]
+}
