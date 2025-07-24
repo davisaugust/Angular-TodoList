@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Card } from "../card/card";
+import { TaskContainer } from '../task-container/task-container';
 
 @Component({
   selector: 'app-home',
-  imports: [Card],
+  imports: [TaskContainer],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })

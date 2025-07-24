@@ -1,0 +1,14 @@
+<div class="card-container">
+    <!-- <div class="card-writer">
+        <label for="">Todo List</label>
+        <input type="text" placeholder="Add your task">
+    </div>     -->
+    <app-add-task (onAddTask)="addTask($event)"></app-add-task>
+    <app-task-item *ngFor="let tarefa of tarefas" 
+    [tarefa]="tarefa" 
+    (onDeleteTask)="deleteTask($event)"
+    (onToggleConcluido)="toggleConcluido($event)"
+    >
+    </app-task-item>
+    
+</div>
