@@ -8,6 +8,7 @@ import { AddTask } from '../add-task/add-task';
 @Component({
   selector: 'app-task-container',
   imports: [CommonModule, TaskItem, AddTask],
+  standalone:true,
   templateUrl: './task-container.html',
   styleUrl: './task-container.css'
 })
@@ -20,20 +21,23 @@ export class TaskContainer {
       
       this.taskService.getTasks().subscribe((data)=>{
         this.tarefas = data;
-        console.log(data);
       });
   
     }
 
+    
     addTask(tarefa: Tarefa){
       this.taskService.addTask(tarefa).subscribe((tarefa) => {
         this.tarefas.push(tarefa);
       });
     }
 
-    deleteTask(tarefa: Tarefa){
-      this.taskService.deleteTask(tarefa).subscribe(() => (this.tarefas = this.tarefas.filter((t) => t.id == tarefa.id)));
-    }
+    deleteTask(tarefa: Tarefa) {
+      this.taskService.deleteTask(tarefa).subscribe(() => {
+      console.log('Tarefa deletada com sucesso!');
+      this.tarefas = this.tarefas.filter((t) => t.id !== tarefa.id);
+  });
+}
 
     toggleConcluido(tarefa: Tarefa){
       tarefa.concluido = !tarefa.concluido;

@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-task-item',
   imports: [CommonModule,FontAwesomeModule],
+  standalone:true,
   templateUrl: './task-item.html',
   styleUrl: './task-item.css'
 })

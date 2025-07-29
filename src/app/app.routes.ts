@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { Home } from './components/home/home';
+import { TaskContainer } from './components/task-container/task-container';
 
 export const routes: Routes = [
     {
         path:"",
-        component:Home
+        component:TaskContainer
     }
 ];

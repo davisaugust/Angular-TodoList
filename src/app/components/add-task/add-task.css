@@ -1,0 +1,32 @@
+form{
+    padding-top: 40px;
+    width: 400px;
+}
+
+.card-top{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.card-top label{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card-top input{
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.category{
+    padding: 25px 0;
+}
+
+.btn{
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+

@@ -1,15 +1,21 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "tarefa": "Aprender angular",
-      "categoria": "pessoal",
+      "id": "3932",
+      "tarefa": "qweqweqweasde",
+      "categoria": "Trabalho",
       "concluido": false
     },
     {
-      "id": "2",
-      "tarefa": "Aprender Typescript",
-      "categoria": "pessoal",
+      "id": "32d0",
+      "tarefa": "qweqweqwdasde",
+      "categoria": "Trabalho",
+      "concluido": false
+    },
+    {
+      "id": "9ed9",
+      "tarefa": "qweqweqdasd",
+      "categoria": "Academia",
       "concluido": false
     }
   ]

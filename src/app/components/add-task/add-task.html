@@ -1,6 +1,6 @@
 <form (ngSubmit)="onSubmit()">
-    <div class="card-writer">
-        <label for="text">Tarefa:</label>
+    <div class="card-top">
+        <label for="text">Todo list</label>
         <input 
             type="text" 
             name="text" 
@@ -11,7 +11,7 @@
             >
     </div>
 
-    <div class="mb-4">
+    <div class="category">
         <label for="categoria">Categoria:</label>
         <select name="categoria" id="categoria" class="form-select" [(ngModel)]="categoria">
             <option value="">Selecione uma categoria</option>
@@ -23,5 +23,5 @@
         </select>
     </div>
 
-    <input type="submit" value="Salvar tarefa" class="btn btn-block">
+    <input type="submit" value="Salvar tarefa" class="btn">
 </form>

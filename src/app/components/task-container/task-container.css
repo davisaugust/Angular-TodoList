@@ -1,33 +1,30 @@
-/* .card-container{
+main{
     display: flex;
-    flex-direction: column;
-    height: 600px;
-    width: 500px;
-    background-color: #ffffff;
-    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.card-writer{
+.card-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    background-color: #ccc;
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    overflow: auto;
 }
 
-.card-writer label{
-    padding-bottom: 15px;
-    font-size: 28px;
-    font-weight: 700;
-    padding-top: 25px;
+.card-content::-webkit-scrollbar {
+  width: 8px;
 }
 
-.card-writer input{
-    border:none;
-    background-color: #e2e2e2;
-    padding: 0 20px;
-    height: 50px;
-    width: 75%;
-    border-radius: 35px;
-    font-size: 20px;
-    font-weight: 500;
-} */
+.card-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-content::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}

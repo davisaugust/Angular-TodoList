@@ -4,6 +4,7 @@
     padding: 15px;
     border-radius: 15px;
     cursor: pointer;
+    width: 400px;
 }
 
 .task h3{
